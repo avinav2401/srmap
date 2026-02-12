@@ -149,6 +149,14 @@ SrmAP integrates directly with your academic data to provide:
 
 ---
 
+## Contributing
+
+Thinking about contributing to this project?
+
+👉 **[Read our Contributing Guide](CONTRIBUTING.md)** to get started!
+
+---
+
 ## [License](https://creativecommons.org/licenses/by-nc-nd/4.0/)
 
 ### You are free to:
