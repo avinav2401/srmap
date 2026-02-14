@@ -1,7 +1,7 @@
 package main
 
 import (
-	"goscraper/src/bootstrap"
+	"goscraper/backend/src/bootstrap"
 	"net/http"
 
 	"github.com/gofiber/adaptor/v2"
