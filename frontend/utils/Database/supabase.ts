@@ -15,6 +15,6 @@ if (!SUPABASE_KEY) {
 
 
 // Create a Supabase client instance
-const supabase = createClient(SUPABASE_URL ?? "", SUPABASE_KEY ?? "");
+const supabase = createClient(SUPABASE_URL || "https://example.com", SUPABASE_KEY || "example");
 
 export { supabase };
