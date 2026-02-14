@@ -228,6 +228,44 @@ func SetupApp() *fiber.App {
 		return c.JSON(session)
 	})
 
+	api.Post("/ophours", func(c *fiber.Ctx) error {
+		var body struct {
+			Ophours []string `json:"ophours"`
+		}
+
+		if err := c.BodyParser(&body); err != nil {
+			return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+				"error": "Invalid JSON body",
+			})
+		}
+
+		if len(body.Ophours) == 0 {
+			// Allow clearing? Frontend sends array.
+			// But check type safety.
+		}
+
+		// Validation: Frontend checks "Array.isArray(ophours) || !ophours.every((item) => typeof item === "string")"
+		// Go structs handle type, but we should join them.
+		ophoursString := strings.Join(body.Ophours, ",")
+
+		token := c.Get("X-CSRF-Token")
+		encodedToken := utils.Encode(token)
+
+		db, err := databases.NewDatabaseHelper()
+		if err != nil {
+			return utils.HandleError(c, err)
+		}
+
+		err = db.UpdateOphour(encodedToken, ophoursString)
+		if err != nil {
+			return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
+				"error": err.Error(),
+			})
+		}
+
+		return c.JSON(fiber.Map{"success": true})
+	})
+
 	api.Delete("/logout", func(c *fiber.Ctx) error {
 		lf := &handlers.LoginFetcher{}
 		session, err := lf.Logout(c.Get("X-CSRF-Token"))

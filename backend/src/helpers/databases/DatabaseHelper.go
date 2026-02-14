@@ -218,3 +218,16 @@ func (db *DatabaseHelper) GetOphourByToken(token string) (string, error) {
 	}
 	return ophour, nil
 }
+
+func (db *DatabaseHelper) UpdateOphour(token string, ophour string) error {
+	query := map[string]string{
+		"token": token,
+	}
+
+	data := map[string]interface{}{
+		"ophour": ophour,
+	}
+
+	_, _, err := db.client.From("goscrape").Update(data, "", "").Match(query).Execute()
+	return err
+}
