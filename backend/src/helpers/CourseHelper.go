@@ -3,8 +3,8 @@ package helpers
 import (
 	"errors"
 	"fmt"
-	"goscraper/src/types"
-	"goscraper/src/utils"
+	"goscraper/backend/src/types"
+	"goscraper/backend/src/utils"
 	"regexp"
 	"strings"
 	"time"

@@ -7,7 +7,7 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 	"encoding/json"
-	"goscraper/src/globals"
+	"goscraper/backend/src/globals"
 	"io"
 	"os"
 	"time"

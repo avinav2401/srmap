@@ -2,7 +2,7 @@ package helpers
 
 import (
 	"fmt"
-	"goscraper/src/types"
+	"goscraper/backend/src/types"
 
 	"strings"
 )

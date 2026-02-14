@@ -3,7 +3,7 @@ package utils
 import (
 	"encoding/base64"
 	"errors"
-	"goscraper/src/globals"
+	"goscraper/backend/src/globals"
 	"log"
 	"os"
 	"strconv"

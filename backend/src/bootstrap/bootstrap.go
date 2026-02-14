@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"goscraper/src/globals"
-	"goscraper/src/handlers"
-	"goscraper/src/helpers/databases"
-	"goscraper/src/types"
-	"goscraper/src/utils"
+	"goscraper/backend/src/globals"
+	"goscraper/backend/src/handlers"
+	"goscraper/backend/src/helpers/databases"
+	"goscraper/backend/src/types"
+	"goscraper/backend/src/utils"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cache"

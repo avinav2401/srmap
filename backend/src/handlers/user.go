@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"goscraper/src/helpers"
-	"goscraper/src/types"
+	"goscraper/backend/src/helpers"
+	"goscraper/backend/src/types"
 )
 
 func GetUser(token string) (*types.User, error) {

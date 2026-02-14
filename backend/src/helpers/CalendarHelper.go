@@ -2,8 +2,8 @@ package helpers
 
 import (
 	"fmt"
-	"goscraper/src/types"
-	"goscraper/src/utils"
+	"goscraper/backend/src/types"
+	"goscraper/backend/src/utils"
 	"strconv"
 	"strings"
 	"time"

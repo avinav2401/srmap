@@ -5,7 +5,7 @@ import (
 	"net"
 	"os"
 
-	"goscraper/src/bootstrap"
+	"goscraper/backend/src/bootstrap"
 )
 
 func main() {
