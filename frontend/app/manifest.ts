@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
 		theme_color: "#11151b",
 		lang: "en",
 		background_color: "#11151b",
-		start_url: "https://class-pro.vercel.app/",
-		scope: "https://class-pro.vercel.app/",
+		start_url: "/",
+		scope: "/",
 		launch_handler: {
 			client_mode: "focus-existing",
 		},

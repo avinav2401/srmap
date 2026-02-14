@@ -14,7 +14,7 @@ const APP_NAME = "SrmAP";
 const APP_DEFAULT_TITLE = "SrmAP";
 const APP_TITLE_TEMPLATE = "%s - PWA App";
 const APP_DESCRIPTION = "Better way to manage your academics.";
-const PRODUCTION_URL = "https://class-pro.vercel.app";
+const PRODUCTION_URL = process.env.NEXT_PUBLIC_URL || "https://srmap-self.vercel.app";
 
 export const metadata: Metadata = {
 	metadataBase: new URL(
@@ -122,13 +122,6 @@ export default async function RootLayout({
 
 					<body className="h-screen">
 						<ViewTransitions>
-							<Script
-								defer
-								src="https://static.cloudflareinsights.com/beacon.min.js"
-								data-cf-beacon='{"token": "be7e879176fc4899a6d71d2cf9383fd5"}'
-								strategy="afterInteractive"
-							/>
-
 							{children}
 						</ViewTransitions>
 					</body>
