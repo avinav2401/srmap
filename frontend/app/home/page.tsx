@@ -82,20 +82,7 @@ export default async function Academia() {
 				</Link>
 			</div>
 
-			<Image
-				src="/screenshots/wide/academia.webp"
-				className="aspect-video z-20 hidden lg:block rounded-2xl shadow-2xl mt-20 mx-20"
-				alt="Hero"
-				width={1200}
-				height={940}
-			/>
-			<Image
-				src="/screenshots/phone/academia.webp"
-				className="z-20 lg:hidden block rounded-2xl shadow-2xl mt-20 mx-20"
-				alt="Hero"
-				width={430}
-				height={932}
-			/>
+
 		</main>
 	);
 }
