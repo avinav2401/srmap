@@ -29,7 +29,7 @@ export default function Popup() {
 				<div
 					role="button"
 					tabIndex={-1}
-					onKeyDown={() => { }}
+					onKeyDown={() => {}}
 					onClick={(e) => {
 						e.stopPropagation();
 					}}
@@ -41,10 +41,10 @@ export default function Popup() {
 							className="text-4xl text-light-accent dark:text-dark-accent"
 						/>
 						<h2 className="text-2xl -mb-3 font-semibold capitalize text-light-color dark:text-dark-color">
-							SrmAP
+							ClassPro
 						</h2>
 						{/* <p className="-mt-3 text-sm underline text-light-color dark:text-dark-color decoration-light-accent opacity-40 dark:decoration-dark-accent">
-            AcademiaPro is now SrmAP
+            AcademiaPro is now ClassPro
           </p> */}
 					</div>
 					<p className="mx-2 text-center opacity-50 text-light-color dark:text-dark-color">

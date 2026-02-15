@@ -30,7 +30,7 @@ export default async function Login() {
 					<div className="flex h-fit max-w-[400px] flex-col justify-between lg:h-full">
 						<div className="flex flex-col gap-3">
 							<div className="flex flex-row items-center justify-center gap-5 text-light-accent lg:justify-start dark:text-dark-accent">
-								<h1 className="text-2xl font-semibold lg:text-4xl">SrmAP</h1>
+								<h1 className="text-2xl font-semibold lg:text-4xl">ClassPro</h1>
 								<FaBookOpen className="text-2xl lg:text-4xl" />
 							</div>
 							<p className="text-center text-sm font-medium text-light-color opacity-60 lg:text-lg lg:text-left dark:text-dark-color">

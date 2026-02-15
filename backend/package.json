@@ -6,6 +6,7 @@
     "dev": "go run src/main.go",
     "build": "go build -o bin/main src/main.go",
     "start": "./bin/main",
+    "install": "go mod tidy",
     "clean": "rm -rf bin/",
     "test": "go test ./...",
     "fmt": "go fmt ./...",
@@ -14,4 +15,4 @@
   "engines": {
     "go": ">=1.23.0"
   }
-}
+} 

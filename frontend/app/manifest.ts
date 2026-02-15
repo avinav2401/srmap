@@ -2,14 +2,14 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
 	return {
-		name: "SrmAP",
-		short_name: "SrmAP",
+		name: "ClassPro",
+		short_name: "ClassPro",
 		description: "Better way to manage your academics.",
 		theme_color: "#11151b",
 		lang: "en",
 		background_color: "#11151b",
-		start_url: "/",
-		scope: "/",
+		start_url: "https://class-pro.vercel.app/",
+		scope: "https://class-pro.vercel.app/",
 		launch_handler: {
 			client_mode: "focus-existing",
 		},

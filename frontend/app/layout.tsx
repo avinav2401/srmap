@@ -10,11 +10,11 @@ import ErrorBoundary from "./Boundary";
 import type { ReactNode } from "react";
 import Script from "next/script";
 
-const APP_NAME = "SrmAP";
-const APP_DEFAULT_TITLE = "SrmAP";
+const APP_NAME = "ClassPro";
+const APP_DEFAULT_TITLE = "ClassPro";
 const APP_TITLE_TEMPLATE = "%s - PWA App";
 const APP_DESCRIPTION = "Better way to manage your academics.";
-const PRODUCTION_URL = process.env.NEXT_PUBLIC_URL || "https://srmap-self.vercel.app";
+const PRODUCTION_URL = "https://class-pro.vercel.app";
 
 export const metadata: Metadata = {
 	metadataBase: new URL(
@@ -97,7 +97,7 @@ export default async function RootLayout({
 		>
 			<ErrorBoundary>
 				<ThemeProvider>
-					<meta name="apple-mobile-web-app-title" content="SrmAP" />
+					<meta name="apple-mobile-web-app-title" content="ClassPro" />
 					<meta
 						name="theme-color"
 						media="(prefers-color-scheme: dark)"
@@ -122,6 +122,13 @@ export default async function RootLayout({
 
 					<body className="h-screen">
 						<ViewTransitions>
+							<Script
+								defer
+								src="https://static.cloudflareinsights.com/beacon.min.js"
+								data-cf-beacon='{"token": "be7e879176fc4899a6d71d2cf9383fd5"}'
+								strategy="afterInteractive"
+							/>
+
 							{children}
 						</ViewTransitions>
 					</body>

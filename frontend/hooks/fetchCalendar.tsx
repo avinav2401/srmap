@@ -11,7 +11,6 @@ let lastFetchTime: number | null = null;
 const CACHE_DURATION = 10 * 60 * 1000;
 
 export default async function fetchCal() {
-	// console.log("FETCHCAL CALLED");
 	const now = Date.now();
 	if (cachedData && lastFetchTime && now - lastFetchTime < CACHE_DURATION) {
 		return cachedData;
@@ -32,14 +31,7 @@ export default async function fetchCal() {
 		},
 	});
 
-	// const json: CalendarResponse = await a.json();
 	const json: CalendarResponse = await a.json();
-
-	if (!a.ok || (json as any).error) {
-		if (a.status === 401 || a.status === 403) {
-			redirect("/auth/login");
-		}
-	}
 
 	if (json.ratelimit) redirect("/ratelimit");
 

@@ -61,7 +61,7 @@ export async function GET() {
 				<TimeArr />
 				<TimetableImage timetable={timetable} />
 			</div>
-			<p tw="text-white text-lg opacity-70 pb-2">Made with SrmAP</p>
+			<p tw="text-white text-lg opacity-70 pb-2">Made with ClassPro</p>
 		</section>,
 		{
 			width: 2400,

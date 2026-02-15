@@ -31,10 +31,7 @@ export default function CalendarGrid({
 	isDownload: boolean;
 	index: number;
 }) {
-	if (!calendar || calendar.length === 0 || !calendar[0]) {
-		return <div className="text-center p-4">No calendar data available. Please login.</div>;
-	}
-
+	
 	const [month, setMonth] = useState(index);
 	const date = new Date().getDate();
 	const todayRef = useRef<HTMLDivElement>(null);
@@ -46,13 +43,13 @@ export default function CalendarGrid({
 
 	useEffect(() => {
 		if (todayRef.current) {
-			todayRef.current?.scrollIntoView?.({
+			todayRef.current.scrollIntoView({
 				behavior: "smooth",
 				block: "center",
 				inline: "center",
 			});
 		} else if (head.current) {
-			head.current?.scrollIntoView?.({
+			head.current.scrollIntoView({
 				behavior: "smooth",
 				block: "start",
 				inline: "start",
@@ -105,7 +102,7 @@ export default function CalendarGrid({
 					</div>
 					<a
 						href={`/api/calendar?month=${month}`}
-						download={`${calendar[0].month.includes("Jul") ? months[month + 6] : months[month]}-SrmAP.png`}
+						download={`${calendar[0].month.includes("Jul") ? months[month + 6] : months[month]}-ClassPro.png`}
 						className="p-1 rounded-lg transition-all duration-150 hover:bg-light-button dark:hover:bg-dark-button"
 					>
 						<FiDownload className="text-lg text-light-accent dark:text-dark-accent cursor-pointer" />

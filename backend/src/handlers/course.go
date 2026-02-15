@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	"goscraper/backend/src/helpers"
-	"goscraper/backend/src/types"
+	"goscraper/src/helpers"
+	"goscraper/src/types"
 )
 
 func GetCourses(token string) (*types.CourseResponse, error) {

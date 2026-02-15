@@ -48,7 +48,7 @@ function OptionalHours({
 
 	return (
 		<div className="flex flex-col gap-4 w-full items-start justify-center">
-			{optionals.filter(hour => hour).map((hour, i) => {
+			{optionals.map((hour, i) => {
 				const [dayorder, hourSlot] = hour.split("-");
 
 				return (
@@ -97,25 +97,18 @@ function OptionalHours({
 							<option disabled value={"H0"} className="truncate">
 								Select Hour
 							</option>
-							{(() => {
-								const dayIndex = Number(optionals[i].split("-")[0].replace("D", "")) - 1;
-								const daySchedule = timetable?.[dayIndex];
-
-								if (!daySchedule || !daySchedule.table) {
-									return null;
-								}
-
-								return daySchedule.table.map((slot, index) => (
-									<option
-										key={index}
-										disabled={!slot || slot.name === ""}
-										value={`H${index + 1}`}
-										className="truncate"
-									>
-										{slot?.name || `Hour ${index + 1}`}
-									</option>
-								));
-							})()}
+							{timetable[
+								Number(optionals[i].split("-")[0].replace("D", "")) - 1
+							]?.table?.map((slot, index) => (
+								<option
+									key={index}
+									disabled={!slot || slot.name === ""}
+									value={`H${index + 1}`}
+									className="truncate"
+								>
+									{slot?.name || `Hour ${index + 1}`}
+								</option>
+							))}
 						</select>
 					</div>
 				);

@@ -13,7 +13,7 @@ export default async function Academia() {
 				<div className="flex items-center justify-center gap-4">
 					<FaBookOpen className="text-2xl text-light-accent dark:text-dark-accent" />
 					<h2 className="text-xl hidden md:block font-semibold text-light-color dark:text-dark-color">
-						SrmAP.
+						ClassPro.
 					</h2>
 				</div>
 				<ThemeToggle />
@@ -47,7 +47,7 @@ export default async function Academia() {
 				href="https://marban.hashnode.dev/classpro-v3"
 				className="text-sm md:text-base font-mono text-center opacity-50 flex items-center justify-center gap-4 mb-4 text-light-color dark:text-dark-color"
 			>
-				<VscMegaphone className="-rotate-12 text-xl" /> Read about SrmAP v3
+				<VscMegaphone className="-rotate-12 text-xl" /> Read about ClassPro v3
 			</Link>
 
 			<h1 className="md:text-6xl text-4xl md:max-w-3xl max-w-md mx-2 text-center font-semibold text-light-color dark:text-dark-color">
@@ -82,7 +82,20 @@ export default async function Academia() {
 				</Link>
 			</div>
 
-
+			<Image
+				src="/screenshots/wide/academia.webp"
+				className="aspect-video z-20 hidden lg:block rounded-2xl shadow-2xl mt-20 mx-20"
+				alt="Hero"
+				width={1200}
+				height={940}
+			/>
+			<Image
+				src="/screenshots/phone/academia.webp"
+				className="z-20 lg:hidden block rounded-2xl shadow-2xl mt-20 mx-20"
+				alt="Hero"
+				width={430}
+				height={932}
+			/>
 		</main>
 	);
 }

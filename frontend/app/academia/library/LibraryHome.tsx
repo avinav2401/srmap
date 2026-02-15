@@ -18,7 +18,7 @@ export default function Library() {
           <h1 className="font-semibold text-4xl">Library.</h1>
 
           <p className="dark:text-dark-color text-light-color text-center transition duration-200 opacity-50 text-md font-medium">
-            Get access to Semester previous year papers or resources, all from SrmAP.
+            Get access to Semester previous year papers or resources, all from ClassPro.
           </p>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function Library() {
             <div className='absolute bottom-0 left-0 flex flex-col gap-1 p-8'>
               <h1 className="font-semibold text-2xl">Resources.</h1>
               <p className="dark:text-dark-color text-light-color transition duration-200 opacity-50 text-base font-medium">
-                A dumpster fire of available files from the web.
+              A dumpster fire of available files from the web.
               </p>
             </div>
           </div>

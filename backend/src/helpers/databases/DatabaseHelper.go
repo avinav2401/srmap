@@ -7,7 +7,7 @@ import (
 	"crypto/sha256"
 	"encoding/base64"
 	"encoding/json"
-	"goscraper/backend/src/globals"
+	"goscraper/src/globals"
 	"io"
 	"os"
 	"time"
@@ -217,17 +217,4 @@ func (db *DatabaseHelper) GetOphourByToken(token string) (string, error) {
 		return "", nil
 	}
 	return ophour, nil
-}
-
-func (db *DatabaseHelper) UpdateOphour(token string, ophour string) error {
-	query := map[string]string{
-		"token": token,
-	}
-
-	data := map[string]interface{}{
-		"ophour": ophour,
-	}
-
-	_, _, err := db.client.From("goscrape").Update(data, "", "").Match(query).Execute()
-	return err
 }

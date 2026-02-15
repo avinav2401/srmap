@@ -23,7 +23,7 @@ export default function Timetable({
 				<h1 className="text-2xl font-semibold">Timetable</h1>
 				<div className="flex items-center justify-center gap-3">
 					<a
-						href="/og/timetable"
+						href="/api/timetable"
 						download
 						className="p-1 rounded-lg transition-all duration-150 hover:bg-light-button dark:hover:bg-dark-button"
 					>

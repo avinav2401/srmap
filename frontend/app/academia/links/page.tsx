@@ -27,7 +27,7 @@ export default function LinksPage() {
 				</div>
 
 				<div className="ml-2 flex flex-col gap-20 md:ml-10">
-					<UrlSection special title="From SrmAP" urls={priority} />
+					<UrlSection special title="From ClassPro" urls={priority} />
 					<UrlSection title="Official URLs" urls={officials} />
 					<UrlSection title="Other URLs" urls={others} />
 				</div>

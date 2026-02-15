@@ -88,7 +88,7 @@ export function Sidebar({
             className={`transition duration-150 ${isOpen ? 'opacity-100' : 'opacity-0'}`}
           >
             <div className='text-color flex items-center justify-between text-light-color dark:text-dark-color'>
-              <h1 className='text-3xl font-semibold'>SrmAP</h1>
+              <h1 className='text-3xl font-semibold'>ClassPro</h1>
               <ThemeToggle />
             </div>
             <div className='my-4 flex'>{dayorder}</div>

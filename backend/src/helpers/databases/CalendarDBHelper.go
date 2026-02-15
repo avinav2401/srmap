@@ -1,9 +1,9 @@
 package databases
 
 import (
-	"goscraper/backend/src/globals"
-	"goscraper/backend/src/helpers"
-	"goscraper/backend/src/types"
+	"goscraper/src/globals"
+	"goscraper/src/helpers"
+	"goscraper/src/types"
 	"os"
 	"strings"
 	"time"

@@ -10,7 +10,7 @@ export default async function Privacy() {
 				<div className="flex items-center justify-center gap-4">
 					<FaBookOpen className="text-2xl text-light-accent dark:text-dark-accent" />
 					<h2 className="text-xl hidden md:block font-semibold text-light-color dark:text-dark-color">
-						SrmAP.
+						ClassPro.
 					</h2>
 				</div>
 				<ThemeToggle />
@@ -51,13 +51,13 @@ export default async function Privacy() {
 
 				<section className="text-lg text-light-color dark:text-dark-color leading-relaxed">
 					<p className="opacity-90">
-						SrmAP (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is
+						ClassPro (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is
 						committed to safeguarding your privacy. This{" "}
 						<span className="underline decoration-light-accent dark:decoration-dark-accent">
 							Privacy Policy
 						</span>{" "}
 						describes how we collect, use, and protect the minimal data
-						necessary for our services. By using SrmAP, you agree to the
+						necessary for our services. By using ClassPro, you agree to the
 						practices outlined below.
 					</p>
 				</section>
@@ -67,7 +67,7 @@ export default async function Privacy() {
 						1. Who We Are
 					</h2>
 					<p className="opacity-90 text-lg">
-						SrmAP is an independent app designed to enhance your access to
+						ClassPro is an independent app designed to enhance your access to
 						university-related information like timetables, delivering a simple,
 						efficient, and visually engaging experience.{" "}
 						<strong className="underline decoration-light-accent dark:decoration-dark-accent">
@@ -82,7 +82,7 @@ export default async function Privacy() {
 						2. Data We Collect and Store
 					</h2>
 					<p className="opacity-90 text-lg">
-						SrmAP collects and securely stores academic data, including:
+						ClassPro collects and securely stores academic data, including:
 					</p>
 					<ul className="list-disc pl-8 space-y-3 text-lg">
 						<li>
@@ -121,7 +121,7 @@ export default async function Privacy() {
 					<p className="opacity-90 text-lg">
 						Your data is protected with AES-256 encryption both in transit and
 						at rest on our Supabase servers, ensuring it remains private and
-						secure. Not even the SrmAP team can access your data thanks to
+						secure. Not even the ClassPro team can access your data thanks to
 						these high security measures.
 					</p>
 					<p className="opacity-90 text-lg">
@@ -167,7 +167,7 @@ export default async function Privacy() {
 						5. Third-Party Services
 					</h2>
 					<p className="opacity-90 text-lg">
-						SrmAP does not share your data with any third parties. Any
+						ClassPro does not share your data with any third parties. Any
 						third-party services used comply with our security standards and do
 						not have access to your data.
 					</p>
@@ -178,7 +178,7 @@ export default async function Privacy() {
 						6. Open Source and Transparency
 					</h2>
 					<p className="opacity-90 text-lg">
-						SrmAP is open-source, developed by a team of two. Our codebase is
+						ClassPro is open-source, developed by a team of two. Our codebase is
 						open for public review, ensuring transparency in data handling. You
 						are welcome to explore or contribute via our official repository:{" "}
 						<Link

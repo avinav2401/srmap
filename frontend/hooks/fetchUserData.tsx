@@ -46,7 +46,7 @@ async function fetchData(): Promise<AllResponse> {
 
 		let json: AllResponse;
 		try {
-			const text = await response.text();
+      const text = await response.text();
 			json = JSON.parse(text);
 		} catch (e) {
 			throw e;
