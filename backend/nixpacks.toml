@@ -1,14 +1,15 @@
-[build]
-nixpacksVersion = "1.31.0"
+[providers]
+go = "1.23"
 
 [phases.setup]
 nixPkgs = ["go_1_23"]
-
-[phases.build]
-cmds = ["go build -o bin/main src/main.go"]
+nixLibs = []
 
 [phases.install]
 cmds = ["go mod download"]
+
+[phases.build]
+cmds = ["go build -o bin/main src/main.go"]
 
 [start]
 cmd = "./bin/main"
