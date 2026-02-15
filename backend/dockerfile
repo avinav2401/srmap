@@ -7,17 +7,17 @@ FROM golang:${GO_VERSION}-alpine AS builder
 
 WORKDIR /app
 
-# Copy go.mod and go.sum
-COPY go.mod go.sum ./
+# Copy go.mod and go.sum from backend directory
+COPY backend/go.mod backend/go.sum ./
 
 # Download dependencies
 RUN go mod download
 
-# Copy source code
-COPY src/ ./src/
+# Copy source code from backend directory
+COPY backend/src/ ./src/
 
 # Copy environment file if it exists
-COPY .env* ./
+COPY backend/.env* ./ 2>/dev/null || true
 
 # Build the application
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main src/main.go
